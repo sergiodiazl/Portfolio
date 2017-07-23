@@ -1,0 +1,21 @@
+#skills-section {
+  width: 100vw;
+  padding-top: 5%;
+  background-color: white;
+}
+.skills {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.skills li {
+  border: 2px solid #EE2FC6;
+  background-color: rgba(238, 47, 198, 0.7);
+  color: white;
+  width: 7em;
+  padding: 0.2em;
+  margin: 0.3em;
+}

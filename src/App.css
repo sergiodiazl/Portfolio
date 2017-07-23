@@ -1,0 +1,123 @@
+/**** Global styles ****/
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+a {
+  text-decoration: none;
+  color:#2FC6EE;
+}
+.color-white {
+  color: white;
+}
+.color-blue {
+  color: #2FC6EE;
+}
+.App {
+  text-align: center;
+  background-color: #2FC6EE;
+}
+.center-me {
+  margin: 0 auto;
+}
+.section-header {
+  font-family: 'Lato', sans-serif;
+  font-size: 2em;
+  display: inline-block;
+  padding: 0.2em;
+  border-bottom: 3px solid #EE2FC6;;
+}
+
+/**** HEADER SECTION ****/
+.App-header {
+  background-color: #2FC6EE;
+  height: 100vh;
+  padding: 20px;
+  color: white;
+}
+
+#title {
+  padding-top: 5%;
+  font-size: 3em;
+  font-family: 'Lato', sans-serif;
+}
+
+#subtitle {
+  font-size: 1.5em;
+  padding: 0 10% 5% 10%;
+}
+
+#scroll-down {
+  margin-top: 5%;
+  display: inline-block;
+  opacity: 0.7;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#scroll-down:hover {
+  opacity: 1;
+}
+/**** END OF HEADER SECTION ****/
+
+/**** ABOUT ****/
+
+.pad-sides {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+}
+
+#about-section {
+  background: white;
+}
+
+/**** FOOTER ****/
+
+footer {
+  background-color: rgba(47, 198, 238, 0.7);
+  padding-top: 2.5em;
+  padding-bottom: 0.5em;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.social-link {
+  width: 4em;
+}
+
+.icon-black {
+  color: black;
+}
+
+.icon-black:hover {
+  color: white;
+}
+
+.icon-white {
+  color: white;
+}
+
+.icon-white:hover {
+  color: black;
+}
