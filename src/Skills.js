@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Scroll from 'react-scroll';
 import './Skills.css';
+import SectionHeader from './SectionHeader';
 const Element = Scroll.Element;
 
 class Skills extends Component {
@@ -28,9 +29,12 @@ class Skills extends Component {
     const skills = this.state.skills;
     return (
       <Element name="skills-element">
-        <section id="skills-section">
-          <h1 id="skills" className="section-header">Skills</h1>
-          <ul className="skills center-me">
+        <section className="skills-section">
+          <SectionHeader
+            title="Skills"
+          />
+          <p>I specialize in full stack JavaScript, and have experience working with front-end frameworks, state management, SQL and noSQL databases, RESTful APIs, and agile development.</p>
+          <ul className="skills">
             {skills.map(skill => <li key={skill}>{skill}</li>)}
           </ul>
         </section>

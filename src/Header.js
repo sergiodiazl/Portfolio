@@ -1,25 +1,33 @@
 import React, { Component } from 'react';
-import './App.css';
-import Scrollchor from 'react-scrollchor';
+import './Header.css';
 import Social from './Social';
+import Scroll from 'react-scroll';
+const Link = Scroll.Link;
+const scroll = Scroll.animateScroll;
+const scrollSpy = Scroll.scrollSpy;
+
 
 class Header extends Component {
   render() {
     return (
-      <header className="App-header">
-        <div id="home">
-          <h1 id="title">Hi, I'm Stella :)</h1>
-          <p id="subtitle">I'm a full stack software engineer. I love solving tough problems and building cool products.</p>
+      <header className="header">
+          <h1 className="header-title">Hi, I'm Stella :)</h1>
+          <p className="header-subtitle">I'm a full stack software engineer. I love solving tough problems and building cool products.</p>
           <Social
             iconColor='icon-white'
           />
-          <div id="scroll-down">
+          <div className="header-learnmore">
             <h3>Learn more</h3>
-            <Scrollchor to="#skills" animate={{ offset: -100 }}>
+            <Link
+            activeClass="active"
+            to="skills-element"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-20}>
               <i className="fa fa-chevron-down fa-3x color-white" aria-hidden="true" ></i>
-            </Scrollchor>
+            </Link>
           </div>
-        </div>
       </header>
     );
   }

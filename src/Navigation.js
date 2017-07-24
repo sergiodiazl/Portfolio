@@ -31,12 +31,11 @@ class Navigation extends Component {
     } else {
       this.setState({ nav: 'nav-v1', text: 'color-white' })
     }
-
   }
 
   render() {
     return (
-      <nav className={`sticky ${this.state.nav}`}>
+      <nav className={`nav nav-sticky ${this.state.nav}`}>
         <a onClick={() => scroll.scrollToTop()}>
           <h1 id="logo" className={this.state.text}>SC</h1>
         </a>
@@ -46,8 +45,8 @@ class Navigation extends Component {
             to="skills-element"
             spy={true}
             smooth={true}
-            duration={500}
-            offset={-20}>
+            duration={400}
+            offset={0}>
             <span className={this.state.text}>Skills</span>
           </Link></li>
           <li><Link
@@ -55,8 +54,8 @@ class Navigation extends Component {
             to="projects-element"
             spy={true}
             smooth={true}
-            duration={500}
-            offset={-20}>
+            duration={400}
+            offset={0}>
             <span className={this.state.text}>Projects</span>
           </Link></li>
           <li><Link
@@ -64,8 +63,8 @@ class Navigation extends Component {
             to="about-element"
             spy={true}
             smooth={true}
-            duration={500}
-            offset={-20}>
+            duration={400}
+            offset={0}>
             <span className={this.state.text}>About</span>
           </Link></li>
         </ul>

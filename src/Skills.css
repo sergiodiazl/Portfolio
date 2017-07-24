@@ -1,6 +1,6 @@
-#skills-section {
-  width: 100vw;
-  padding-top: 5%;
+.skills-section {
+  width: 100%;
+  padding-top: 10%;
   background-color: white;
 }
 .skills {
@@ -10,6 +10,8 @@
   justify-content: center;
   padding-right: 5%;
   padding-left: 5%;
+  margin: 0 auto;
+  max-width: 600px;
 }
 .skills li {
   border: 2px solid #EE2FC6;
@@ -19,3 +21,19 @@
   padding: 0.2em;
   margin: 0.3em;
 }
+.skills-section p {
+  margin: 1em auto;
+  max-width: 600px;
+}
+
+@media (min-width: 550px) {
+  .skills {
+    padding: 0;
+  }
+  .skills li {
+    width: 8em;
+    padding: 0.5em 0.7em;
+    margin: 0.4em;
+  }
+}
+

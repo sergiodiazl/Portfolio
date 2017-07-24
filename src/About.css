@@ -1,0 +1,21 @@
+.about-section {
+  background: white;
+  padding: 10%;
+}
+.round-border {
+  border-radius: 50%;
+}
+.profile-pic {
+  display: block;
+  margin: 0 auto;
+}
+.about-summary {
+  text-align: left;
+  max-width: 750px;
+  margin: 0 auto;
+}
+@media (min-width: 650px) {
+  .project-card {
+    width: 40%;
+  }
+}
