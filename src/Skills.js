@@ -9,7 +9,7 @@ class Skills extends Component {
     super(props);
     this.state = {
       skills: [
-        'JavaScript',
+        'ES6',
         'Node.js',
         'React',
         'Redux',
@@ -32,8 +32,9 @@ class Skills extends Component {
         <section className="skills-section">
           <SectionHeader
             title="Skills"
+            color="white"
           />
-          <p>I specialize in full stack JavaScript, and have experience working with front-end frameworks, state management, SQL and noSQL databases, RESTful APIs, and agile development.</p>
+          <p>Full stack JavaScript web development</p>
           <ul className="skills">
             {skills.map(skill => <li key={skill}>{skill}</li>)}
           </ul>

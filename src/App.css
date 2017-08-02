@@ -1,8 +1,9 @@
 .App {
   text-align: center;
-  background-color: #2FC6EE;
+  background-color: rgba(85, 202, 249, 1);
 }
 a {
   text-decoration: none;
-  color:#2FC6EE;
+  color: rgba(85, 202, 249, 1);
+  /*color:#2FC6EE;*/
 }

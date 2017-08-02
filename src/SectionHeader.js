@@ -4,7 +4,7 @@ import './SectionHeader.css';
 class SectionHeader extends Component {
   render() {
     return (
-      <h1 className={`section-header ${this.props.name}`} >
+      <h1 className={`section-header ${this.props.name} ${this.props.color} ${this.props.underlineColor}`} >
         {this.props.title}
       </h1>
     );

@@ -10,7 +10,7 @@ class Navigation extends Component {
     super(props)
     this.state = {
       nav: 'nav-v1',
-      text: 'color-white'
+      text: 'logo-v1'
     }
     this.handleScroll = this.handleScroll.bind(this)
   }
@@ -26,10 +26,10 @@ class Navigation extends Component {
 
   handleScroll(event) {
     let scrollTop = event.srcElement.body.scrollTop
-    if (scrollTop > 20) {
-      this.setState({ nav: 'nav-v2', text: 'color-blue' })
-    } else {
-      this.setState({ nav: 'nav-v1', text: 'color-white' })
+    if (scrollTop > 0) {
+      this.setState({ nav: 'nav-v2', text: 'logo-v2' })
+    } else if (scrollTop === 0) {
+      this.setState({ nav: 'nav-v1', text: 'logo-v1' })
     }
   }
 

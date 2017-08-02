@@ -2,24 +2,20 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  align-content: center;
   padding: 0 1em;
 }
 .nav-sticky {
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
   position: sticky;
   top: 0px; /* When the element reaches top: 10px, it becomes fixed. */
   z-index: 100;
 }
 .nav-v1 {
-  background-color: #2FC6EE;
+  background-color: rgba(85, 202, 249, 1);
   transition: all 1s ease;
 }
-.nav-v2 {
-  background-color: rgba(233, 233, 233, 1);
-  transition: all 1s ease;
+.nav-v1 span {
+  font-size: 1.5em;
 }
 #logo {
   display: inline-block;
@@ -30,27 +26,51 @@
   font-family: 'Lato', sans-serif;
   cursor: pointer;
   cursor: hand;
+  color: white;
+  font-size: 1.6em;
+}
+.nav-v2 {
+  background-color: rgba(233, 233, 233, 1);
+  /*border-bottom: 1px solid #D2D2D2;*/
+  box-shadow:         2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+  transition: all 1s ease;
+}
+.nav-v2 #logo {
+  color: #2FC6EE;
+  font-size: 1.3em;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: all 1s ease;
+}
+.nav-v2 span {
+  color: #2FC6EE;
+  font-size: 1.2em;
+  transition: all 1s ease;
+}
+.nav-v2 .nav-list {
+  margin: 0.5em 0;
+  transition: all 1s ease;
 }
 .nav-list {
   list-style-type: none;
   text-align: right;
   display: inline-block;
   padding: 0;
+  margin: 1em 0;
 }
 .nav-list li {
   display: inline-block;
   padding: 0 0.5em;
+  color: white;
 }
 .nav-list a {
   color: white;
   position: relative;
-  padding-bottom: 0.4em;
-  font-size: 1.2em;
+  /*padding-bottom: 0.4em;*/
   cursor: pointer;
   cursor: hand;
-  font-size: 1.2em;
 }
-.nav-list a:before {
+/*.nav-list a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -59,33 +79,16 @@
   left: 0;
   background-color: white;
   visibility: hidden;
-  -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 .nav-list a.active:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-}
-.color-white {
-  color: white;
-}
-.color-blue {
-  color: #2FC6EE;
-}
-
-@media (min-width: 375px) {
-  .nav-list a {
-    font-size: 1.3em;
-  }
-}
+}*/
 
 @media (min-width: 550px) {
-  .nav-list a {
-    font-size: 1.4em;
-  }
   #logo {
     font-size: 1.8em;
   }

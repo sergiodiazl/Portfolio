@@ -1,5 +1,5 @@
 .header {
-  background-color: #2FC6EE;
+  background-color: rgba(85, 202, 249, 1);
   height: 90vh;
   padding: 10%;
   color: white;
@@ -8,14 +8,19 @@
   justify-content: space-around;
   align-items: center;
 }
+.header-text {
+  margin: 1em 0 0.2em 0;
+  max-width: 80%;
+}
 .header-title {
-  margin: 5% 0;
   font-size: 2.3em;
   font-family: 'Lato', sans-serif;
+  color: white;
 }
 .header-subtitle {
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin: 5% 0 15% 0;
+  color: white;
 }
 .header-learnmore {
   margin-top: 5%;
@@ -23,6 +28,9 @@
   display: inline-block;
   opacity: 0.7;
   animation: pulse 3s infinite;
+  cursor: pointer;
+  cursor: hand;
+  color: white;
 }
 .color-white {
   color: white;
@@ -42,7 +50,6 @@
 @media (min-width: 375px) {
   .header-title {
     font-size: 3em;
-    margin-top: 15%;
   }
   .header-subtitle {
     font-size: 1.5em;
@@ -52,7 +59,6 @@
 @media (min-width: 650px) {
   .header-title {
     font-size: 3.2em;
-    margin-top: 15%;
   }
   .header-subtitle {
     font-size: 1.9em;
@@ -65,11 +71,9 @@
 @media (min-width: 950px) {
   .header-title {
     font-size: 3.2em;
-    margin-top: 15%;
   }
   .header-subtitle {
     font-size: 1.9em;
-    max-width: 80%;
     margin: 2% 0 6% 0;
   }
   .header-learnmore {
