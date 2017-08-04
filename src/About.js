@@ -12,7 +12,7 @@ class About extends Component {
           <SectionHeader
             title="About Me"
           />
-          <img src="./images/profile.jpg" className="round-border profile-pic" alt="profile photo of stella"/>
+          <img src="./images/profile.jpg" className="round-border profile-pic" alt="Stella Chung"/>
           <div className="about-summary">
             <p>After working in database and CRM management in the nonprofit sector, I decided to apply my love of technology and analytical thinking towards becoming a software engineer. I'm currently a full stack web developer specializing in JavaScript.</p>
             <p>Besides coding, I love hiking, painting, and traveling. I also care deeply about environmental issues, diversity in tech, and civic engagement.</p>

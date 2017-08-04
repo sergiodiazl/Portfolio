@@ -10,7 +10,6 @@ import Header from './Header';
 
 class App extends Component {
   render() {
-    console.log('scrolltop', )
     return (
       <div className="App">
         <Navigation />
