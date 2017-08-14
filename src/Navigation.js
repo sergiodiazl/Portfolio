@@ -56,6 +56,15 @@ class Navigation extends Component {
             smooth={true}
             duration={400}
             offset={0}>
+            <span className={this.state.text}>Portfolio</span>
+          </Link></li>
+          <li><Link
+            activeClass="active"
+            to="other-element"
+            spy={true}
+            smooth={true}
+            duration={400}
+            offset={0}>
             <span className={this.state.text}>Projects</span>
           </Link></li>
           <li><Link

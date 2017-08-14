@@ -80,7 +80,7 @@ class Projects extends Component {
       <Element name="projects-element">
         <section className="project-section">
           <SectionHeader
-            title="Projects"
+            title="Portfolio"
             underlineColor="pink-underline"
           />
           <div className="projects-container">
