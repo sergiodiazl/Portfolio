@@ -52,16 +52,16 @@ class Projects extends Component {
           demo: null,
           presentation: 'https://www.youtube.com/watch?v=fH4YrnoB3-M&list=PLx0iOsdUOUmnCoQp2wnimmDBx22j2vXBU&index=3'
         },
-        {
-          name: 'Weather App',
-          description: "A web app that displays local weather information and different dog pictures depending on the forecast. Built using jQuery as part of a freeCodeCamp project.",
-          imageURL: './images/doggyWeather.png',
-          altText: 'A doggy weather app',
-          orientation: 'landscape',
-          github: 'https://codepen.io/stella-yc/full/vyBWKL/',
-          demo: 'https://codepen.io/stella-yc/pen/vyBWKL',
-          presentation: null
-        },
+        // {
+        //   name: 'Weather App',
+        //   description: "A web app that displays local weather information and different dog pictures depending on the forecast. Built using jQuery as part of a freeCodeCamp project.",
+        //   imageURL: './images/doggyWeather.png',
+        //   altText: 'A doggy weather app',
+        //   orientation: 'landscape',
+        //   github: 'https://codepen.io/stella-yc/pen/vyBWKL',
+        //   demo: 'https://codepen.io/stella-yc/full/vyBWKL/',
+        //   presentation: null
+        // },
         {
           name: "Conway's Game of Life",
           description: "A web app that allows users to set up the initial state of the game by clicking on tiles, or generate a random start state. Built using pure JavaScript.",

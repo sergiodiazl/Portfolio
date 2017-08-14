@@ -43,7 +43,7 @@ class Social extends Component {
           <div className="social-link" key={social.name}>
             <a href={social.link} className={this.props.iconColor}
               target="_blank" rel="noopener noreferrer">
-              <img src={social.image} />
+              <img src={social.image} alt={social.name}/>
             </a>
           </div>
         )}
