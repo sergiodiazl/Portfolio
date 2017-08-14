@@ -5,6 +5,7 @@ import Scroll from 'react-scroll';
 const Link = Scroll.Link;
 
 
+
 class Header extends Component {
   render() {
     return (
@@ -25,7 +26,7 @@ class Header extends Component {
             smooth={true}
             duration={500}
             offset={-20}>
-              <i className="fa fa-chevron-down fa-3x color-white" aria-hidden="true" ></i>
+              <img src="/images/chevron-down.png" alt="arrow pointing down to rest of content"/>
             </Link>
           </div>
       </header>
