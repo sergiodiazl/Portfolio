@@ -8,27 +8,27 @@ class Social extends Component {
       socialLinks: [
         {
           name: 'GitHub',
-          fontawesome: 'fa-github',
+          image: "./images/github.png",
           link: "https://github.com/stella-yc"
         },
         {
           name: 'Stack Overflow',
-          fontawesome: 'fa-stack-overflow',
+          image: "./images/stackoverflow.png",
           link: 'https://stackoverflow.com/story/stellachung'
         },
         {
           name: 'Twitter',
-          fontawesome: 'fa-twitter',
+          image: "./images/twitter.png",
           link: "https://twitter.com/stellasighs"
         },
         {
           name: 'Medium',
-          fontawesome: 'fa-medium',
+          image: "./images/medium.png",
           link: "https://medium.com/@stll.chung"
         },
         {
           name: 'LinkedIn',
-          fontawesome: 'fa-linkedin',
+          image: "./images/linkedin.png",
           link: "https://www.linkedin.com/in/chungstella/"
         },
       ]
@@ -43,7 +43,7 @@ class Social extends Component {
           <div className="social-link" key={social.name}>
             <a href={social.link} className={this.props.iconColor}
               target="_blank" rel="noopener noreferrer">
-              <i className={`fa ${social.fontawesome} fa-2x`} aria-hidden="true"></i>
+              <img src={social.image} />
             </a>
           </div>
         )}

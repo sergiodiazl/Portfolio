@@ -61,6 +61,15 @@ class Projects extends Component {
           github: 'https://codepen.io/stella-yc/full/vyBWKL/',
           demo: 'https://codepen.io/stella-yc/pen/vyBWKL',
           presentation: null
+        },
+        {
+          name: "Conway's Game of Life",
+          description: "A web app that allows users to set up the initial state of the game by clicking on tiles, or generate a random start state. Built using pure JavaScript.",
+          imageURL: './images/gameOfLife.gif',
+          altText: 'Game of Life in action',
+          orientation: 'landscape',
+          github: 'https://github.com/stella-yc/conways-game-of-life',
+          demo: 'https://stella-yc.github.io/conways-game-of-life/'
         }
       ]
     }

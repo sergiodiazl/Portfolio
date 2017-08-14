@@ -7,7 +7,7 @@ class Footer extends Component {
     return (
       <footer>
         <Social
-          iconColor='icon-black'
+          iconColor='icon-white'
         />
         <p>&copy;Stella Chung</p>
       </footer>
