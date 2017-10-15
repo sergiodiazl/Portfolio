@@ -32,13 +32,13 @@ class OtherProjects extends Component {
           altText: 'Image from Hacker Noon article',
           link: 'https://hackernoon.com/heres-what-i-learned-from-700-hours-in-a-coding-bootcamp-d92cb4e8afc1'
         },
-        // {
-        //   name: "How to implement Dijkstra's algorithm in JavaScript",
-        //   description: "A walkthrough of how to code Dijkstra's algorithm using a weighted graph.",
-        //   imageURL: './images/dijkstra.png',
-        //   altText: "A weighted graph",
-        //   link: ''
-        // },
+        {
+          name: "How to implement Dijkstra's algorithm in JavaScript",
+          description: "A walkthrough of how to code Dijkstra's algorithm using a weighted graph.",
+          imageURL: './images/dijkstra.png',
+          altText: "A weighted graph",
+          link: ''
+        },
         {
           name: "Better Web Development with Elm",
           description: "Tech talk presented at Fullstack Academy on the Elm language and functional programming concepts.",
