@@ -24,13 +24,15 @@
   color: white;
 }
 .header-learnmore {
-  margin-top: 5%;
+  margin-top: 8%;
   margin-bottom: 5%;
   display: inline-block;
   opacity: 0.7;
   animation: pulse 3s infinite;
   cursor: pointer;
   cursor: hand;
+}
+.chevron-down {
   color: white;
 }
 .color-white {

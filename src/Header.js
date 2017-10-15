@@ -26,7 +26,7 @@ class Header extends Component {
             smooth={true}
             duration={500}
             offset={-20}>
-              <img src="/images/chevron-down.png" alt="arrow pointing down to rest of content"/>
+              <i className="fa fa-chevron-down chevron-down fa-2x" aria-hidden="true"></i>
             </Link>
           </div>
       </header>
