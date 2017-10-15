@@ -9,7 +9,9 @@ const Project = (props) => {
   return (
     <div className="project-card">
       <div>
-        <img className={orientation} src={imageURL} alt={altText} />
+        <div className="project-img-container">
+          <img className={orientation} src={imageURL} alt={altText} />
+        </div>
         <h1>{name}</h1>
         <p>{description}</p>
       </div>
@@ -32,16 +34,16 @@ class Projects extends Component {
     super(props);
     this.state = {
       projectInfo: [
-        // {
-        //   name: "Grace's Bakery",
-        //   description: 'A fictional e-commerce site for delivering freshly baked goods. Built with React, Redux, Express, Sequelize and PostgreSQL.',
-        //   imageURL: './images/shootingStar.gif',
-        //   altText: "Grace's Bakery screenshot",
-        //   orientation: 'landscape',
-        //   github: 'https://github.com/stella-yc/graces-bakery',
-        //   demo: 'https://gracesbakery.herokuapp.com/',
-        //   presentation: null
-        // },
+        {
+          name: "Grace's Bakery",
+          description: 'A fictional e-commerce site for delivering freshly baked goods. Built with React, Redux, Express, Sequelize and PostgreSQL.',
+          imageURL: './images/gracesBakery.jpg',
+          altText: "Grace's Bakery screenshot",
+          orientation: 'portrait',
+          github: 'https://github.com/stella-yc/graces-bakery',
+          demo: 'https://gracesbakery.herokuapp.com/',
+          presentation: null
+        },
         {
           name: 'Forest Adventure',
           description: 'A classic 2D platformer built with Phaser.js, ES6 and webpack. Shoot stars, plant & climb trees, and collect all 5 gems! Created as part of an independent Stackathon project at Fullstack Academy.',
