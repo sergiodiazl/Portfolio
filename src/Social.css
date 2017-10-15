@@ -5,8 +5,8 @@
   margin-top: 1em;
 }
 .social-link {
-  /* width: 4em; */
-  margin: 0 1em 0em 1em;
+  font-size: 1.8em;
+  margin: 0 0.5em 0em 0.5em;
 }
 .icon-black {
   color: black;
@@ -22,4 +22,17 @@
 
 .icon-white:hover {
   color: black;
+}
+
+
+@media (min-width: 375px) {
+  .social-link {
+    font-size: 2.2em;
+  }
+}
+
+@media (min-width: 650px) {
+  .social-link {
+    font-size: 2.5em;
+  }
 }
