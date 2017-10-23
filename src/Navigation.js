@@ -25,10 +25,9 @@ class Navigation extends Component {
   }
 
   handleScroll(event) {
-    let scrollTop = event.srcElement.body.scrollTop
-    if (scrollTop > 0) {
+    if (window.pageYOffset > 0) {
       this.setState({ nav: 'nav-v2', text: 'logo-v2' })
-    } else if (scrollTop === 0) {
+    } else if (window.pageYOffset === 0) {
       this.setState({ nav: 'nav-v1', text: 'logo-v1' })
     }
   }
