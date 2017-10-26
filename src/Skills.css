@@ -22,6 +22,7 @@
   padding: 0.3em 0.2em;
   margin: 0.3em;
   font-weight: bold;
+  opacity: 0;
 }
 .skills-section p {
   margin: 1em auto;

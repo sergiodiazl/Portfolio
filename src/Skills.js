@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Scroll from 'react-scroll';
+
 import './Skills.css';
 import SectionHeader from './SectionHeader';
+
 const Element = Scroll.Element;
 
 class Skills extends Component {
@@ -36,19 +38,11 @@ class Skills extends Component {
 
   handleScroll (evt) {
     let scrollTop = evt.srcElement.scrollingElement.scrollTop;
-    if (scrollTop > 20) {
+    if (scrollTop > 300) {
       this.setState({ animateSkills: 'fadeInUp' });
     }
-    if (scrollTop < 20) {
+    if (scrollTop < 300) {
       this.setState({animateSkills: ''});
-    }
-  }
-
-  triggerAnimation () {
-    if (document.documentElement.scrollTop > 430) {
-      this.setState({
-        animateSkills: 'fadeInUp'
-      })
     }
   }
 
