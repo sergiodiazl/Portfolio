@@ -10,7 +10,7 @@ class Header extends Component {
   render() {
     return (
       <header className="header">
-          <div className="header-text">
+          <div className="header-text fadeIn">
             <h1 className="header-title">Hi, I'm Stella :)</h1>
             <p className="header-subtitle">I'm a full stack software engineer. I love solving tough problems and building cool products.</p>
           </div>
