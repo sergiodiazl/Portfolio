@@ -9,8 +9,8 @@ const Link = Scroll.Link;
 class Header extends Component {
   render() {
     return (
-      <header className="header">
-          <div className="header-text fadeIn">
+      <header className="header fadeIn">
+          <div className="header-text">
             <h1 className="header-title">Hi, I'm Stella :)</h1>
             <p className="header-subtitle">I'm a full stack software engineer. I love solving tough problems and building cool products.</p>
           </div>
