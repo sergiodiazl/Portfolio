@@ -14,7 +14,7 @@
   margin: 0 auto;
   max-width: 600px;
 }
-.skills li {
+.skills > li {
   border: 2px solid #E3DCDC;
   background-color: #FFF7F7;
   color: #565656;
@@ -29,7 +29,21 @@
   padding: 0 5%;
   color: white;
 }
-
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
 @media (min-width: 550px) {
   .skills {
     padding: 0;

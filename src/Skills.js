@@ -21,7 +21,34 @@ class Skills extends Component {
         'Express',
         'PostgreSQL',
         'Firebase',
-      ]
+      ],
+      animateSkills: ''
+    }
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+  componentDidMount () {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll (evt) {
+    let scrollTop = evt.srcElement.scrollingElement.scrollTop;
+    if (scrollTop > 20) {
+      this.setState({ animateSkills: 'fadeInUp' });
+    }
+    if (scrollTop < 20) {
+      this.setState({animateSkills: ''});
+    }
+  }
+
+  triggerAnimation () {
+    if (document.documentElement.scrollTop > 430) {
+      this.setState({
+        animateSkills: 'fadeInUp'
+      })
     }
   }
 
@@ -36,7 +63,7 @@ class Skills extends Component {
           />
           <p>Full stack JavaScript web development</p>
           <ul className="skills">
-            {skills.map(skill => <li key={skill}>{skill}</li>)}
+            {skills.map(skill => <li className={this.state.animateSkills} key={skill}>{skill}</li>)}
           </ul>
         </section>
       </Element>
