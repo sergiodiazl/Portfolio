@@ -21,9 +21,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.project-card {
+  opacity: 0;
   line-height: 1.4em;
 }
 .project-img-container {
@@ -83,4 +81,19 @@
   .project-img-container {
     height: 20vw;
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInUp {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
