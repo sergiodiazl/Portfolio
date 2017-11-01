@@ -17,7 +17,7 @@ class Header extends Component {
           <Social
             iconColor='icon-white'
           />
-          <div className="header-learnmore">
+          <div className="header-learnmore pulse">
             <h3>Learn more</h3>
             <Link
             activeClass="active"

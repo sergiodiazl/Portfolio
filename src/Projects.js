@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Projects.css';
+import './animations.css';
 import SectionHeader from './SectionHeader';
 import projectInfo from './projectData';
 import Scroll from 'react-scroll';
@@ -57,9 +58,6 @@ class Projects extends Component {
     let scrollTop = evt.srcElement.scrollingElement.scrollTop;
     if (scrollTop > 850) {
       this.setState({ animationClass: 'fadeIn' });
-    }
-    if (scrollTop < 850) {
-      this.setState({animationClass: ''});
     }
   }
 
