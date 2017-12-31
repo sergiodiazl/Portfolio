@@ -37,7 +37,7 @@ class Skills extends Component {
   }
 
   handleScroll (evt) {
-    let scrollTop = evt.srcElement.scrollingElement.scrollTop;
+    let scrollTop = evt.target.scrollingElement.scrollTop;
     if (scrollTop > 300) {
       this.setState({ animateSkills: 'fadeInUp' });
     }

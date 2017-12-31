@@ -55,7 +55,7 @@ class Projects extends Component {
   }
 
   animateScroll (evt) {
-    let scrollTop = evt.srcElement.scrollingElement.scrollTop;
+    let scrollTop = evt.target.scrollingElement.scrollTop;
     if (scrollTop > 850) {
       this.setState({ animationClass: 'fadeIn' });
     }
