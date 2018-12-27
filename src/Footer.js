@@ -9,7 +9,7 @@ class Footer extends Component {
         <Social
           iconColor='icon-white'
         />
-        <p>&copy;Stella Chung</p>
+        <p>&copy;Sergio Diaz Leguizamón -2018</p>
       </footer>
     );
   }

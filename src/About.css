@@ -5,7 +5,10 @@
   color: #404040
 }
 .round-border {
-  border-radius: 50%;
+  object-fit: cover;
+  border-radius: 100%;
+  width:30%;
+  height: auto;
 }
 .profile-pic {
   display: block;

@@ -7,18 +7,29 @@ const Link = Scroll.Link;
 
 
 class Header extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+     
+      language:this.props.language,
+    }
+  }
+  componentWillReceiveProps({language}) {
+    this.setState({...this.state,language})
+  }
   render() {
+    const{headerTitle,headerSubtitle,headerSeeMore}=this.state.language;
     return (
       <header className="header fadeIn">
           <div className="header-text">
-            <h1 className="header-title">Hi, I'm Stella :)</h1>
-            <p className="header-subtitle">I'm a full stack software engineer. I love solving tough problems and building cool products.</p>
+            <h1 className="header-title">{headerTitle}</h1>
+            <p className="header-subtitle">{headerSubtitle}</p>
           </div>
           <Social
             iconColor='icon-white'
           />
           <div className="header-learnmore pulse">
-            <h3>Learn more</h3>
+            <h3>{headerSeeMore}</h3>
             <Link
             activeClass="active"
             to="skills-element"

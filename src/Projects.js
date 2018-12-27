@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Projects.css';
 import './animations.css';
 import SectionHeader from './SectionHeader';
-import projectInfo from './projectData';
+
 import Scroll from 'react-scroll';
 const Element = Scroll.Element;
 
@@ -41,7 +41,8 @@ class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      animationClass: ''
+      animationClass: '',
+      language:this.props.language,
     };
     this.animateScroll = this.animateScroll.bind(this);
   }
@@ -49,7 +50,9 @@ class Projects extends Component {
   componentDidMount () {
     window.addEventListener('scroll', this.animateScroll);
   }
-
+  componentWillReceiveProps({language}) {
+    this.setState({...this.state,language})
+  }
   componentWillUnmount () {
     window.removeEventListener('scroll', this.animateScroll);
   }
@@ -62,12 +65,13 @@ class Projects extends Component {
   }
 
   render() {
+    const {projectInfo}=this.state.language;
     return (
       <Element name="projects-element">
         <section className="project-section">
           <SectionHeader
             title="Portfolio"
-            underlineColor="pink-underline"
+            underlineColor="green-underline"
           />
           <div className="projects-container">
             {projectInfo.map(project =>

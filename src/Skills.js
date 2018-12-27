@@ -10,23 +10,28 @@ class Skills extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      language:this.props.language,
       skills: [
-        'ES6',
+        'Javascript',
         'Node.js',
         'React',
-        'Redux',
         'HTML & CSS',
-        'Phaser.js',
-        'React Native',
-        'Git & GitHub',
-        'Sequelize',
-        'Express',
-        'PostgreSQL',
-        'Firebase',
+        'Python',
+        'Bootstrap',
+        'Git',
+        'Java',
+        'Android',
+        'MySql',
+        'MongoDb',
+        'Java',
+        'Redux',
       ],
       animateSkills: ''
     }
     this.handleScroll = this.handleScroll.bind(this);
+  }
+  componentWillReceiveProps({language}) {
+    this.setState({...this.state,language})
   }
   componentDidMount () {
     window.addEventListener('scroll', this.handleScroll);
@@ -48,14 +53,15 @@ class Skills extends Component {
 
   render() {
     const skills = this.state.skills;
+    const{skillsTitle}=this.state.language
     return (
       <Element name="skills-element">
         <section className="skills-section">
           <SectionHeader
-            title="Skills"
+            title={skillsTitle}
             color="white"
           />
-          <p>Full stack JavaScript web development</p>
+          <p>{skillsTitle}</p>
           <ul className="skills">
             {skills.map(skill => <li className={this.state.animateSkills} key={skill}>{skill}</li>)}
           </ul>

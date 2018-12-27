@@ -18,6 +18,19 @@
 .nav-v1 span {
   font-size: 1em;
 }
+.nav-v1 button,
+.nav-v2 button{
+  background: none;
+  border:none;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  }
+  .nav-v1 button{
+    color:white;
+  }
+  .nav-v2 button{
+    color: #2FC6EE;
+  }
 #logo {
   display: inline-block;
   border: 2px solid white;
@@ -70,6 +83,7 @@
   cursor: pointer;
   cursor: hand;
 }
+
 /*.nav-list a:before {
   content: "";
   position: absolute;

@@ -10,11 +10,15 @@ class Navigation extends Component {
     super(props)
     this.state = {
       nav: 'nav-v1',
-      text: 'logo-v1'
+      text: 'logo-v1',
+      button:'logo-v1 language-button',
+      language:this.props.language,
     }
     this.handleScroll = this.handleScroll.bind(this)
   }
-
+  componentWillReceiveProps({language}) {
+    this.setState({...this.state,language})
+  }
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll)
     scrollSpy.update();
@@ -26,17 +30,17 @@ class Navigation extends Component {
 
   handleScroll(event) {
     if (window.pageYOffset > 0) {
-      this.setState({ nav: 'nav-v2', text: 'logo-v2' })
+      this.setState({ nav: 'nav-v2', text: 'logo-v2', button:'logo-v2 language-button', })
     } else if (window.pageYOffset === 0) {
-      this.setState({ nav: 'nav-v1', text: 'logo-v1' })
+      this.setState({ nav: 'nav-v1', text: 'logo-v1', button:'logo-v1 language-button', })
     }
   }
 
   render() {
+    const {navSkills,navPortfolio,navProjects,navAbout,languageButton}=this.state.language
     return (
       <nav className={`nav nav-sticky ${this.state.nav}`}>
         <a onClick={() => scroll.scrollToTop()}>
-          <h1 id="logo" className={this.state.text}>SC</h1>
         </a>
         <ul className="nav-list">
           <li><Link
@@ -46,7 +50,7 @@ class Navigation extends Component {
             smooth={true}
             duration={400}
             offset={0}>
-            <span className={this.state.text}>Skills</span>
+            <span className={this.state.text}>{navSkills}</span>
           </Link></li>
           <li><Link
             activeClass="active"
@@ -55,7 +59,7 @@ class Navigation extends Component {
             smooth={true}
             duration={400}
             offset={0}>
-            <span className={this.state.text}>Portfolio</span>
+            <span className={this.state.text}>{navPortfolio}</span>
           </Link></li>
           <li><Link
             activeClass="active"
@@ -64,7 +68,7 @@ class Navigation extends Component {
             smooth={true}
             duration={400}
             offset={0}>
-            <span className={this.state.text}>Projects</span>
+            <span className={this.state.text}>{navProjects}</span>
           </Link></li>
           <li><Link
             activeClass="active"
@@ -73,9 +77,13 @@ class Navigation extends Component {
             smooth={true}
             duration={400}
             offset={0}>
-            <span className={this.state.text}>About</span>
+            <span className={this.state.text}>{navAbout}</span>
           </Link></li>
+          <li>
+            <button className={this.state.button}onClick={this.props.changeLanguage}>{languageButton}</button>
+          </li>
         </ul>
+      
       </nav>
 
     )
