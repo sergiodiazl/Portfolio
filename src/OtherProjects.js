@@ -26,12 +26,12 @@ class OtherProjects extends Component {
  
   render() {
 
-    const{ projectArticleInfo }= this.props.language
+    const{ projectArticleInfo,navProjects }= this.props.language
     return (
       <Element name="other-element">
         <section className="other-section">
           <SectionHeader
-            title="Other Projects"
+            title={navProjects }
             underlineColor="pink-underline"
           />
           <div className="other-container">
