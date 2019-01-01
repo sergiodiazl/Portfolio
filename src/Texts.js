@@ -75,7 +75,7 @@ export const SPANISH={
       
       ],
       aboutTitle:'Acerca de mí',
-      aboutInfo:"Me llamo Sergio.Después de trabajar en otros campos ypor el interés que tengo en las computadoras,decidí estudiar ingeniería en software en la univerdad Nacional Arturo Jauretche ,en Buenos Aires:Me interesa principalmente el desarrollo web.En mi tiempo libre me gusta tocar la guitarra,hacer ejercicio o pasarlo con mis seres queridos.Vivo en Florencio Varela,Buenos Aires,Argentina.",
+      aboutInfo:"Me llamo Sergio.Después de trabajar en otros campos y por el interés que tengo en las computadoras,decidí estudiar ingeniería en software en la univerdad Nacional Arturo Jauretche ,en Buenos Aires:Me interesa principalmente el desarrollo web y móvil.En mi tiempo libre me gusta tocar la guitarra,hacer ejercicio o pasarlo con mis seres queridos.Vivo en Florencio Varela,Buenos Aires,Argentina.",
 }
 
 export const ENGLISH={
@@ -85,7 +85,7 @@ export const ENGLISH={
     navAbout:"About me",
     languageButton:"Español",
     headerTitle:"Hello,i'm Sergio",
-    headerSubtitle:"I'm a Software engineer who likes technology and learning",
+    headerSubtitle:"I'm a Software engineer who likes technology and learning.",
     headerSeeMore:"See more",
     skillsTitle:"Software skills",
     projectInfo :[
@@ -150,5 +150,5 @@ export const ENGLISH={
       
       ],
       aboutTitle:'About me',
-      aboutInfo:"My name is Sergio.After working  in non related fields and a constant interest in computers,i decided to study Software engineering in Arturo Jaurtech University,in Buenos Aires.I'm interested in web development mainly.In my free time i play guitar,exercise or spend it with my loved ones.I am based in FLorencio Varela,Buenos Aires,Argentina",
+      aboutInfo:"My name is Sergio.After working  in non related fields and a constant interest in computers,i decided to study Software engineering in Arturo Jauretche University,in Buenos Aires.I'm interested in web development mainly.In my free time i play guitar,exercise or spend it with my loved ones.I am based in FLorencio Varela,Buenos Aires,Argentina",
 }
