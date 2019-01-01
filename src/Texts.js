@@ -5,7 +5,7 @@ export const SPANISH={
     navAbout:"Acerca de mí",
     languageButton:"English",
     headerTitle:"Hola,soy Sergio",
-    headerSubtitle:"Soy un ingeniero en Software,me gusta la tecnología y aprender",
+    headerSubtitle:"Soy un ingeniero en Software,me gusta la tecnología y aprender.",
     headerSeeMore:"Ver más",
     skillsTitle:"Habilidades para desarrollo de software",
     projectInfo :[
