@@ -2,7 +2,8 @@
   /*background: rgba(250, 228, 229, 1);*/
   background: #FCEEEF;
   padding: 5vh;
-  color: #404040
+  color: #404040;
+  font-family: 'Lato', sans-serif;
 }
 .round-border {
   object-fit: cover;
