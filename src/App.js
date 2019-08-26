@@ -14,7 +14,7 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      language:SPANISH,
+      language:ENGLISH,
     }
     this.changeLanguage=this.changeLanguage.bind(this);    
   }
@@ -30,8 +30,9 @@ class App extends Component {
       <div className="App">
         <Navigation changeLanguage={this.changeLanguage} language={this.state.language}/>
         <Header  language={this.state.language}/>
-        <Skills  language={this.state.language}/>
         <Projects  language={this.state.language}/>
+        <Skills  language={this.state.language}/>
+        
         <OtherProjects language={this.state.language} />
         <About  language={this.state.language}/>
         <Footer />

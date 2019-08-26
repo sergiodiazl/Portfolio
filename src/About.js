@@ -14,7 +14,7 @@ class About extends Component {
           <SectionHeader
             title={aboutTitle}
           />
-          <img src="./images/sergio.jpg" className="round-border profile-pic" alt=""Sergio Diaz Leguizamon/>
+          <img src="./images/sergio.jpg" className="round-border profile-pic" alt="Sergio Diaz Leguizamon"/>
           <div className="about-summary">
             <p>{aboutInfo}</p>
         </div>

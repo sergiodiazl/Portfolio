@@ -12,6 +12,7 @@
   height: auto;
 }
 .profile-pic {
+  max-height: 50 vh;
   display: block;
   margin: 0 auto;
 }

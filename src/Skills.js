@@ -11,21 +11,7 @@ class Skills extends Component {
     super(props);
     this.state = {
       language:this.props.language,
-      skills: [
-        'Javascript',
-        'Node.js',
-        'React',
-        'HTML & CSS',
-        'Python',
-        'Bootstrap',
-        'Git',
-        'Java',
-        'Android',
-        'MySql',
-        'MongoDb',
-        'Java',
-        'Redux',
-      ],
+     
       animateSkills: ''
     }
     this.handleScroll = this.handleScroll.bind(this);
@@ -40,7 +26,7 @@ class Skills extends Component {
   componentWillUnmount () {
     window.removeEventListener('scroll', this.handleScroll);
   }
-
+ 
   handleScroll (evt) {
     let scrollTop = evt.target.scrollingElement.scrollTop;
     if (scrollTop > 300) {
@@ -52,7 +38,21 @@ class Skills extends Component {
   }
 
   render() {
-    const skills = this.state.skills;
+    const skills = [
+      'Javascript',
+      'Node.js',
+      'React',
+      'HTML & CSS',
+      'Python',
+      'Bootstrap',
+      'Git',
+      'Java',
+      'Android',
+      'MySql',
+      'MongoDb',
+      'Java',
+      'Redux',
+    ];
     const{skillsTitle}=this.state.language
     return (
       <Element name="skills-element">
@@ -63,7 +63,10 @@ class Skills extends Component {
           />
           <p>{skillsTitle}</p>
           <ul className="skills">
-            {skills.map(skill => <li className={this.state.animateSkills} key={skill}>{skill}</li>)}
+            {skills.map(skill =>
+              
+              <li className={this.state.animateSkills} key={skill}>{skill}
+               </li>)}
           </ul>
         </section>
       </Element>

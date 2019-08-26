@@ -11,6 +11,18 @@ export const SPANISH={
     projectInfo :[
       {
         id: 1,
+        name: 'Room resorts',
+        description: 'Sitio dedicado a mostrar las habitaciones de un hotel ficticio,realizado en react y contentful cms',
+        imageURL: './images/rooms.png',
+        altText: 'habitaciones',
+        orientation: 'portrait',
+        github: 'https://github.com/sergiodiazl/reactResortsRooms',
+        demo: 'https://resortroomsdemo.netlify.com/',
+ 
+      },
+     
+      {
+        id: 2,
         name: 'Movie Helper',
         description: "Web app que sugiere pelicula según los parámetros del usuario.React,redux,Wow.js.Información de The movie database",
         imageURL: './images/movie-helper.png',
@@ -18,20 +30,8 @@ export const SPANISH={
         orientation: 'portrait',
         github: 'https://github.com/sergiodiazl/redux-movie-helper',
         demo: 'https://moviehelperr.herokuapp.com/',
-        presentation: null
-      },
       
-        {
-          id: 2,
-          name: 'TpApp',
-          description: "Aplicación móvil que permite publicar fotos con ubicación y seguir a otros usuarios,multilenguaje.Realizada en Java,xml y back end en php y mysql",
-          imageURL: './images/tpapp.png',
-          altText: 'red social con localizacion',
-          orientation: 'landscape',
-          github: 'https://github.com/sergiodiazl/tpapp',
-          demo: null,
-         
-        },
+      },
         {
           id: 3,
           name: "React coin info",
@@ -43,18 +43,18 @@ export const SPANISH={
           demo: 'http://react-coin-info.herokuapp.com//',
         
         },
+      
         {
           id: 4,
-          name: 'Aplicación del clima',
-          description: 'Aplicación web que permite obtener información del clima en cualquier ciudad mediante openWeatherMap con interface en react.Disponible en inglés y español',
-          imageURL: './images/clima.png',
-          altText: 'informacion del clima',
-          orientation: 'portrait',
-          github: 'https://github.com/sergiodiazl/react-clima',
-          demo: 'http://climaconreact.herokuapp.com/',
-   
+          name: 'TpApp',
+          description: "Aplicación móvil que permite publicar fotos con ubicación y seguir a otros usuarios,multilenguaje.Realizada en Java,xml y back end en php y mysql",
+          imageURL: './images/tpapp.png',
+          altText: 'red social con localizacion',
+          orientation: 'landscape',
+          github: 'https://github.com/sergiodiazl/tpapp',
+          demo: null,
+         
         }
-       
       
       ],
       projectArticleInfo: [
@@ -75,7 +75,7 @@ export const SPANISH={
       
       ],
       aboutTitle:'Acerca de mí',
-      aboutInfo:"Me llamo Sergio.Después de trabajar en otros campos y por el interés que tengo en las computadoras,decidí estudiar ingeniería en software en la univerdad Nacional Arturo Jauretche ,en Buenos Aires:Me interesa principalmente el desarrollo web y móvil.En mi tiempo libre me gusta tocar la guitarra,hacer ejercicio o pasarlo con mis seres queridos.Vivo en Florencio Varela,Buenos Aires,Argentina.",
+      aboutInfo:"Soy Sergio.Soy un ingeniero en informática gradudo de la universidad Nacional Arturo Jauretche en  Argentina.Tuve educacion adicional en formas de cursos  y becas en Tucuman ,Argentina y Kuthay,Turquia.Principalmente interesado en desarrollo web pero estoy abierto a otras propuestas.",
 }
 
 export const ENGLISH={
@@ -89,10 +89,21 @@ export const ENGLISH={
     headerSeeMore:"See more",
     skillsTitle:"Software skills",
     projectInfo :[
+      
+      {
+        id: 1,
+      name: 'Resort rooms',
+      description: 'Site showcasing a fictitous resorts rooms.Done in react and contentful cms',
+      imageURL: './images/rooms.png',
+      altText: 'rooms',
+      orientation: 'portrait',
+      github: 'https://github.com/sergiodiazl/reactResortsRooms',
+      demo: 'https://resortroomsdemo.netlify.com/',
+  },
         {
-          id: 1,
+          id: 2,
           name: 'Movie Helper',
-          description: "Movie suggesting web app using The movie database,Redux,React and Wow.js,available on 3 languages(English,Spanish and Russian)",
+          description: "Movie suggesting web app using The movie database.Used Redux,React and Wow.js,available on 3 languages(English,Spanish and Russian)",
           imageURL: './images/movie-helper.png',
           altText: 'Movie helper app',
           orientation: 'portrait',
@@ -101,19 +112,9 @@ export const ENGLISH={
           presentation: null
         },
         {
-          id: 2,
-          name: 'TpApp',
-          description: "Mobile app for photo posting with geographical ubication.Done in  Java,xml with  php  and mysql back end",
-          imageURL: './images/tpapp.png',
-          altText: 'social photo posting',
-          orientation: 'landscape',
-          github: 'https://github.com/sergiodiazl/tpapp',
-          demo: null,
-        },
-        {
           id: 3,
           name: "React coin info",
-          description: ' Cryptocurrency informain visualizer,built with react React',
+          description: ' Cryptocurrency informain visualizer,built with React',
           imageURL: './images/react-coin.png',
           altText: "screenshot de ract coin info",
           orientation: 'portrait',
@@ -122,14 +123,15 @@ export const ENGLISH={
         },
         {
           id: 4,
-          name: 'Weather App',
-          description: 'Web app for getting weather information on any given city using FreeweatherMapApi,built with  react.',
-          imageURL: './images/clima.png',
-          altText: 'informacion del clima',
-          orientation: 'portrait',
-          github: 'https://github.com/sergiodiazl/react-clima',
-          demo: 'http://climaconreact.herokuapp.com/',
+          name: 'TpApp',
+          description: "Mobile app for photo posting with geographical ubication.Done in  Java,xml with  php  and mysql back end",
+          imageURL: './images/tpapp.png',
+          altText: 'social photo posting',
+          orientation: 'landscape',
+          github: 'https://github.com/sergiodiazl/tpapp',
+          demo: null,
         },
+        
       
       ],
       projectArticleInfo: [
@@ -150,5 +152,5 @@ export const ENGLISH={
       
       ],
       aboutTitle:'About me',
-      aboutInfo:"My name is Sergio.After working  in non related fields and a constant interest in computers,i decided to study Software engineering in Arturo Jauretche University,in Buenos Aires.I'm interested in web development mainly.In my free time i play guitar,exercise or spend it with my loved ones.I am based in FLorencio Varela,Buenos Aires,Argentina",
+      aboutInfo:"My name is Sergio .I'm a software engineer,graduated from Arturo Jaurteche University,had additional education in development courses and scholarships in Tucuman,Argentina and Kutahya,Turkey.Currently interested in web development but open to other proposals.",
 }

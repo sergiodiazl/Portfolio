@@ -43,15 +43,7 @@ class Navigation extends Component {
         <a onClick={() => scroll.scrollToTop()}>
         </a>
         <ul className="nav-list">
-          <li><Link
-            activeClass="active"
-            to="skills-element"
-            spy={true}
-            smooth={true}
-            duration={400}
-            offset={0}>
-            <span className={this.state.text}>{navSkills}</span>
-          </Link></li>
+         
           <li><Link
             activeClass="active"
             to="projects-element"
@@ -60,6 +52,15 @@ class Navigation extends Component {
             duration={400}
             offset={0}>
             <span className={this.state.text}>{navPortfolio}</span>
+          </Link></li>
+          <li><Link
+            activeClass="active"
+            to="skills-element"
+            spy={true}
+            smooth={true}
+            duration={400}
+            offset={0}>
+            <span className={this.state.text}>{navSkills}</span>
           </Link></li>
           <li><Link
             activeClass="active"
