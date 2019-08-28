@@ -32,7 +32,7 @@ class Header extends Component {
             <h3>{headerSeeMore}</h3>
             <Link
             activeClass="active"
-            to="skills-element"
+            to="projects-element"
             spy={true}
             smooth={true}
             duration={500}
