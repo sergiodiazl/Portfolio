@@ -4,6 +4,9 @@ import './animations.css';
 import SectionHeader from './SectionHeader';
 
 import Scroll from 'react-scroll';
+
+
+
 const Element = Scroll.Element;
 
 const Project = (props) => {
@@ -14,7 +17,9 @@ const Project = (props) => {
     <div className={`project-card ${animation}`}>
       <div>
         <div className="project-img-container">
+          
           <img className={orientation} src={imageURL} alt={altText} />
+          
         </div>
         <h1>{name}</h1>
         <p>{description}</p>

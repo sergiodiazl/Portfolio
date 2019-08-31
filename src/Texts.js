@@ -84,7 +84,7 @@ export const ENGLISH={
     navProjects:"Projects",
     navAbout:"About me",
     languageButton:"Español",
-    headerTitle:"Hello,i'm Sergio",
+    headerTitle:"Hello,I'm Sergio",
     headerSubtitle:"I'm a Software engineer who likes technology and learning.",
     headerSeeMore:"See more",
     skillsTitle:"Software skills",
