@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from './node_modules/reacte_modules/react';
 import './Social.css';
 
 class Social extends Component {
@@ -21,7 +21,7 @@ class Social extends Component {
         {
           name:'Cv',
           fa:'fa fa-file-pdf',
-          link: "https://drive.google.com/file/d/1IJsiBTuZCPUzakPVK5AbVJN5xh9HlvLN/view?usp=sharing"
+          link: "https://drive.google.com/file/d/1fmNb4MoH9AjqeqPlZSGxTtaDwxo2N6yx/view?usp=sharing"
         },
         {
           name:'Email',
