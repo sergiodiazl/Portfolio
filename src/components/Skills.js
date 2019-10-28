@@ -12,9 +12,7 @@ class Skills extends Component {
     this.state = {
       language:this.props.language,
      
-      animateSkills: ''
     }
-    this.handleScroll = this.handleScroll.bind(this);
   }
   componentWillReceiveProps({language}) {
     this.setState({...this.state,language})
@@ -27,15 +25,6 @@ class Skills extends Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
  
-  handleScroll (evt) {
-    let scrollTop = evt.target.scrollingElement.scrollTop;
-    if (scrollTop > 300) {
-      this.setState({ animateSkills: 'fadeInUp' });
-    }
-    if (scrollTop < 300) {
-      this.setState({animateSkills: ''});
-    }
-  }
 
   render() {
     const skills = [
@@ -65,7 +54,7 @@ class Skills extends Component {
           <ul className="skills">
             {skills.map(skill =>
               
-              <li className={this.state.animateSkills} key={skill}>{skill}
+              <li  key={skill}>{skill}
                </li>)}
           </ul>
         </section>

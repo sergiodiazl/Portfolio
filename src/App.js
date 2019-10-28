@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import Skills from './Skills';
-import Projects from './Projects';
-import About from './About';
-import Footer from './Footer';
-import Navigation from './Navigation';
-import Header from './Header';
-import OtherProjects from './OtherProjects';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import About from './components/About';
+import Footer from './components/Footer';
+import Navigation from './components/Navigation';
+import Header from './components/Header';
+import OtherProjects from './components/OtherProjects';
 import { SPANISH, ENGLISH } from './Texts';
 
 class App extends Component {

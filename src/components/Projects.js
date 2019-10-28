@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Projects.css';
-import './animations.css';
 import SectionHeader from './SectionHeader';
 
 import Scroll from 'react-scroll';
@@ -8,13 +7,12 @@ import Scroll from 'react-scroll';
 
 
 const Element = Scroll.Element;
-
 const Project = (props) => {
-  const { name, description, imageURL, github, demo, presentation, orientation, altText } = props.info;
-  const { animation } = props;
+  const { name, description, imageURL, github, demo,  orientation, altText } = props.info;
+
 
   return (
-    <div className={`project-card ${animation}`}>
+    <div className={`project-card `}>
       <div>
         <div className="project-img-container">
           
@@ -31,11 +29,7 @@ const Project = (props) => {
             : null
           }
         <a href={github} target="_blank" rel="noopener noreferrer">Code</a>
-        {
-          presentation
-          ? <a href={presentation} target="_blank" rel="noopener noreferrer">Presentation</a>
-          : null
-        }
+     
       </div>
 
     </div>
@@ -46,10 +40,9 @@ class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      animationClass: '',
       language:this.props.language,
     };
-    this.animateScroll = this.animateScroll.bind(this);
+ 
   }
 
   componentDidMount () {
@@ -62,13 +55,7 @@ class Projects extends Component {
     window.removeEventListener('scroll', this.animateScroll);
   }
 
-  animateScroll (evt) {
-    let scrollTop = evt.target.scrollingElement.scrollTop;
-    if (scrollTop > 850) {
-      this.setState({ animationClass: 'fadeIn' });
-    }
-  }
-
+ 
   render() {
     const {projectInfo}=this.state.language;
     return (
@@ -83,7 +70,6 @@ class Projects extends Component {
               <Project
                 info={project}
                 key={project.id}
-                animation={this.state.animationClass}
               />)
             }
           </div>

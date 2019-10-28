@@ -8,18 +8,26 @@ class Social extends Component {
       socialLinks: [
         {
           name: 'GitHub',
-          image: "./images/github.png",
-          fa: 'fa-github',
+          fa: 'fab fa-github',
           link: "https://github.com/sergiodiazl/"
         },
       
     
         {
           name: 'LinkedIn',
-          image: "./images/linkedin.png",
-          fa: 'fa-linkedin',
+          fa: 'fab fa-linkedin',
           link: "https://www.linkedin.com/in/sergiodiazleguizamon/"
         },
+        {
+          name:'Cv',
+          fa:'fa fa-file-pdf',
+          link: "https://drive.google.com/file/d/1IJsiBTuZCPUzakPVK5AbVJN5xh9HlvLN/view?usp=sharing"
+        },
+        {
+          name:'Email',
+          fa:'fa fa-envelope-open-text',
+          link: "mailto:sergiodiazleguizamon@gmail.com"
+        }
       ]
     }
   }
@@ -33,8 +41,7 @@ class Social extends Component {
             <a href={social.link}
               className={this.props.iconColor}
               target="_blank" rel="noopener noreferrer">
-              {/*<img src={social.image} alt={social.name}/> */}
-              <i className={`fa ${social.fa}`}aria-hidden="true"></i>
+              <i className={ social.fa} aria-hidden="true"></i> 
             </a>
           </div>
         )}
