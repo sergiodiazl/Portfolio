@@ -24,6 +24,13 @@
   font-weight: bold;
   
 }
+.skills > li>i {
+ 
+  color: #48E784;
+  filter: brightness(50%);
+  font-weight: normal;
+  
+}
 .skills-section p {
   margin: 1em auto;
   max-width: 600px;
