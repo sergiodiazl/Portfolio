@@ -16,7 +16,7 @@ export const SPANISH = {
       imageURL: './images/imagenet.png',
       altText: 'image recognizer',
       orientation: 'portrait',
-      github: 'https://github.com/sergiodiazl/imagreconfront',
+      github: 'https://github.com/sergiodiazl/imagereconfront',
       demo: 'https://imagenetkeras.netlify.com',
 
     },
@@ -52,7 +52,7 @@ export const SPANISH = {
       altText: "screenshot de ract coin info",
       orientation: 'portrait',
       github: 'https://github.com/sergiodiazl/react-coin-info',
-      demo: 'http://react-coin-info.herokuapp.com//',
+      demo: 'http://react-coin-info.herokuapp.com/',
 
     },
 
@@ -98,7 +98,7 @@ export const ENGLISH = {
       imageURL: './images/imagenet.png',
       altText: 'image recognizer',
       orientation: 'portrait',
-      github: 'https://github.com/sergiodiazl/imagreconfront',
+      github: 'https://github.com/sergiodiazl/imagereconfront',
       demo: 'https://imagenetkeras.netlify.com',
 
     },
@@ -132,7 +132,7 @@ export const ENGLISH = {
       altText: "screenshot de ract coin info",
       orientation: 'portrait',
       github: 'https://github.com/sergiodiazl/react-coin-info',
-      demo: 'http://react-coin-info.herokuapp.com//',
+      demo: 'http://react-coin-info.herokuapp.com/',
     },
 
 
