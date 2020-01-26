@@ -4,6 +4,8 @@ import './normalize.css';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-156976179-1');
+ReactGA.pageview('/');
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
