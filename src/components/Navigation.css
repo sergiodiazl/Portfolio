@@ -18,11 +18,32 @@
 .nav-v1 span {
   font-size: 1em;
 }
+.nav-v1 span:before,.nav-v2 span:before {
+  font-size: 1em;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  margin-top:3%;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+.nav-v1 span:hover:before,.nav-v2 span:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
 .nav-v1 button,
 .nav-v2 button{
   background: none;
   border:none;
-  
+  cursor:pointer;
+    outline:none;
+    font-size: 1em;
+    font-family: inherit;
   }
   .nav-v1 button{
     color:white;
@@ -43,6 +64,11 @@
   font-size: 1em;
   transition: all 1s ease;
 }
+.nav-v2 span:before {
+  background-color: #2FC6EE;
+ 
+}
+
 .nav-v2 .nav-list {
   margin: 0.9em 0 0 0;
   transition: all 1s ease;
@@ -71,7 +97,7 @@
 
 @media (min-width: 550px) {
   .nav-v1 span {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
   .nav-v2 span {
     font-size: 1.2em;
@@ -79,9 +105,7 @@
 }
 
 @media (min-width: 550px) {
-  #logo {
-    font-size: 1.8em;
-  }
+ 
   .nav-list li {
     padding: 0 1em;
   }

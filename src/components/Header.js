@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
+import '../animations.css';
 import Social from './Social';
 import Scroll from 'react-scroll';
 const Link = Scroll.Link;

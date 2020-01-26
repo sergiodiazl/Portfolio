@@ -10,7 +10,7 @@ class Navigation extends Component {
     super(props)
     this.state = {
       nav: 'nav-v1',
-      text: 'logo-v1',
+   
       button:'logo-v1 language-button',
       language:this.props.language,
     }
@@ -30,9 +30,9 @@ class Navigation extends Component {
 
   handleScroll(event) {
     if (window.pageYOffset > 0) {
-      this.setState({ nav: 'nav-v2', text: 'logo-v2', button:'logo-v2 language-button', })
+      this.setState({ nav: 'nav-v2', button:'language-button', })
     } else if (window.pageYOffset === 0) {
-      this.setState({ nav: 'nav-v1', text: 'logo-v1', button:'logo-v1 language-button', })
+      this.setState({ nav: 'nav-v1',  button:' language-button', })
     }
   }
 
@@ -51,7 +51,7 @@ class Navigation extends Component {
             smooth={true}
             duration={400}
             offset={0}>
-            <span className={this.state.text}>{navPortfolio}</span>
+            <span >{navPortfolio}</span>
           </Link></li>
           <li><Link
             activeClass="active"
@@ -60,7 +60,7 @@ class Navigation extends Component {
             smooth={true}
             duration={400}
             offset={0}>
-            <span className={this.state.text}>{navSkills}</span>
+            <span >{navSkills}</span>
           </Link></li>
           <li><Link
             activeClass="active"
@@ -69,7 +69,7 @@ class Navigation extends Component {
             smooth={true}
             duration={400}
             offset={0}>
-            <span className={this.state.text}>{navProjects}</span>
+            <span >{navProjects}</span>
           </Link></li>
           <li><Link
             activeClass="active"
@@ -78,7 +78,7 @@ class Navigation extends Component {
             smooth={true}
             duration={400}
             offset={0}>
-            <span className={this.state.text}>{navAbout}</span>
+            <span >{navAbout}</span>
           </Link></li>
           <li>
             <button className={this.state.button}onClick={this.props.changeLanguage}>{languageButton}</button>
