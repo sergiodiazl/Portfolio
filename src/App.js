@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 
 import './App.css';
 import Skills from './components/Skills';
@@ -40,5 +41,6 @@ class App extends Component {
     );
   }
 }
-
+ReactGA.initialize('UA-156976179-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 export default App;

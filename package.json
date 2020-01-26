@@ -2,11 +2,11 @@
   "name": "sergio-portfolio",
   "version": "0.1.0",
   "private": true,
- 
   "dependencies": {
     "normalize.css": "^7.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-ga": "^2.7.0",
     "react-lazy-load": "^3.0.13",
     "react-scripts": "1.0.10",
     "react-scroll": "^1.5.4"
