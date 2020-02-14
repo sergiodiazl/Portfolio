@@ -32,15 +32,19 @@
 }
 
 .pulse {
-  animation: pulse 3s infinite;
+  animation: pulse 1.5s infinite;
 }
-
+.pulse:hover {
+  animation: 0;
+  
+  opacity: 1;
+}
 @keyframes pulse {
   0% {
     opacity: 1;
   }
   50% {
-    opacity: 0.3
+    opacity: 0
   }
   100% {
     opacity: 1;
