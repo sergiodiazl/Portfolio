@@ -47,9 +47,9 @@ export const SPANISH = {
     {
       id: 4,
       name: "React coin info",
-      description: ' Visualizador de cotizaciones y estadisticas de cripto monedas,realizado en React',
+      description: ' Visualizador de cotizaciones y estadisticas de cripto monedas, realizado en React',
       imageURL: './images/react-coin.png',
-      altText: "screenshot de ract coin info",
+      altText: "screenshot de react coin info",
       orientation: 'portrait',
       github: 'https://github.com/sergiodiazl/react-coin-info',
       demo: 'http://react-coin-info.herokuapp.com/',
@@ -62,7 +62,7 @@ export const SPANISH = {
   projectArticleInfo: [
     {
       name: 'Software para gestión de programas de estudio',
-      description: "Programa para coordinar y aprobar los programas de estudios propuestos.Para el uso de la Universidad Nacional Arturo Jauretche.",
+      description: "Programa para coordinar y aprobar los programas de estudios propuestos. Para el uso de la Universidad Nacional Arturo Jauretche.",
       imageURL: './images/syllabus.jpg',
       altText: 'Equipo de desarrollo',
       link: 'https://www.unaj.edu.ar/estudiantes-de-ingenieria-en-informatica-desarrollaron-un-software-de-gestion-de-programas-de-estudio/'
@@ -77,7 +77,7 @@ export const SPANISH = {
 
   ],
   aboutTitle: 'Acerca de mí',
-  aboutInfo: "Soy Sergio.Soy un ingeniero en informática gradudo de la universidad Nacional Arturo Jauretche en  Argentina.Tuve educacion adicional en formas de cursos  y becas en Tucuman ,Argentina y Kuthay,Turquia.Principalmente interesado en desarrollo web pero estoy abierto a otras propuestas.",
+  aboutInfo: "Soy Sergio. Soy un ingeniero en informática gradudo de la universidad Nacional Arturo Jauretche en  Argentina. Tuve educacion adicional en formas de cursos  y becas en Tucuman ,Argentina y Kutahya,Turquia. Principalmente interesado en desarrollo web pero estoy abierto a otras propuestas.",
 }
 
 export const ENGLISH = {
@@ -94,7 +94,7 @@ export const ENGLISH = {
     {
       id: 1,
       name: 'Imagenet image classifier',
-      description: "Image classifier,server running a keras model trained withthe imagenet database,front end running in React",
+      description: "Image classifier,server running a keras model trained withthe imagenet database, front end running in React",
       imageURL: './images/imagenet.png',
       altText: 'image recognizer',
       orientation: 'portrait',
@@ -106,7 +106,7 @@ export const ENGLISH = {
     {
       id: 2,
       name: 'Movie Helper',
-      description: "Movie suggesting web app using The movie database.Used Redux,React and Wow.js,available on 3 languages(English,Spanish and Russian)",
+      description: "Movie suggesting web app using The movie database.Used Redux,React and Wow.js, available on 3 languages (English, Spanish and Russian)",
       imageURL: './images/movie-helper.png',
       altText: 'Movie helper app',
       orientation: 'portrait',
@@ -117,7 +117,7 @@ export const ENGLISH = {
     {
       id: 3,
       name: 'Resort rooms',
-      description: 'Site showcasing a fictitous resorts rooms.Done in react and contentful cms',
+      description: 'Site showcasing a fictitous resorts rooms. Done with react and contentful cms.',
       imageURL: './images/rooms.png',
       altText: 'rooms',
       orientation: 'portrait',
@@ -127,9 +127,9 @@ export const ENGLISH = {
     {
       id: 4,
       name: "React coin info",
-      description: ' Cryptocurrency informain visualizer,built with React',
+      description: ' Cryptocurrency information visualizer, built with React.',
       imageURL: './images/react-coin.png',
-      altText: "screenshot de ract coin info",
+      altText: "react coin info screenshot",
       orientation: 'portrait',
       github: 'https://github.com/sergiodiazl/react-coin-info',
       demo: 'http://react-coin-info.herokuapp.com/',
@@ -140,7 +140,7 @@ export const ENGLISH = {
   projectArticleInfo: [
     {
       name: 'Development of syllabus management software',
-      description: "Program for coordinating and reviewing the syllabus of courses.For internal use in Arturo Jauretche National University",
+      description: "Program for coordinating and reviewing the syllabus of courses. For internal use in Arturo Jauretche National University.",
       imageURL: './images/syllabus.jpg',
       altText: 'development team',
       link: 'https://www.unaj.edu.ar/estudiantes-de-ingenieria-en-informatica-desarrollaron-un-software-de-gestion-de-programas-de-estudio/'
@@ -155,5 +155,5 @@ export const ENGLISH = {
 
   ],
   aboutTitle: 'About me',
-  aboutInfo: "My name is Sergio .I'm a software engineer,graduated from Arturo Jaurteche University,had additional education in development courses and scholarships in Tucuman,Argentina and Kutahya,Turkey.Currently interested in web development but open to other proposals.",
+  aboutInfo: "My name is Sergio .I'm a software engineer,graduated from Arturo Jaurteche University, had additional education in development courses and scholarships in Tucuman,Argentina and Kutahya, Turkey. Currently interested in web development but open to other proposals.",
 }
