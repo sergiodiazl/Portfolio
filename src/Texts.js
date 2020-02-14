@@ -12,7 +12,7 @@ export const SPANISH = {
     {
       id: 1,
       name: 'Clasificador de imagenes Imagenet',
-      description: "Reconoce objetos en una imagen ,servidor corriendo un modelo keras entrenado usando la base de datos imagenet,Front end en React",
+      description: "Reconoce objetos en una imagen ,servidor corriendo un modelo keras entrenado usando la base de datos imagenet, Front end en React",
       imageURL: './images/imagenet.png',
       altText: 'image recognizer',
       orientation: 'portrait',
@@ -25,7 +25,7 @@ export const SPANISH = {
     {
       id: 2,
       name: 'Movie Helper',
-      description: "Web app que sugiere pelicula según los parámetros del usuario.React,redux,Wow.js.Información de The movie database",
+      description: "Web app que sugiere pelicula según los parámetros del usuario.React, redux, Wow.js. Información de The movie database",
       imageURL: './images/movie-helper.png',
       altText: 'Movie helper app',
       orientation: 'portrait',
