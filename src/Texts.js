@@ -94,7 +94,7 @@ export const ENGLISH = {
     {
       id: 1,
       name: 'Imagenet image classifier',
-      description: "Image classifier,server running a keras model trained withthe imagenet database, front end running in React",
+      description: "Image classifier,server running a keras model trained with the imagenet database, front end running in React",
       imageURL: './images/imagenet.png',
       altText: 'image recognizer',
       orientation: 'portrait',
