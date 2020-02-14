@@ -21,7 +21,7 @@ class Social extends Component {
         {
           name:'Cv',
           fa:'fa fa-file-pdf',
-          link: "https://drive.google.com/file/d/1fmNb4MoH9AjqeqPlZSGxTtaDwxo2N6yx/view?usp=sharing"
+          link: "https://drive.google.com/file/d/1m0eCbhBwZhD6VuX_Oc0XtF69e6Kv-9ra/view?usp=sharing"
         },
         {
           name:'Email',
