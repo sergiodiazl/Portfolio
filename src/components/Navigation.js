@@ -11,7 +11,7 @@ class Navigation extends Component {
     this.state = {
       nav: 'nav-v1',
    
-      button:'logo-v1 language-button',
+      button:' language-button',
       language:this.props.language,
     }
     this.handleScroll = this.handleScroll.bind(this)
